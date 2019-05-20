@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".dummy.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="@string/hello_blank_fragment"/>-->
+    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+
+        <Button
+                android:text="BOOK TRIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.912"/>
+        <EditText
+                android:layout_width="258dp"
+                android:layout_height="56dp"
+                android:inputType="textPersonName"
+                android:text="Destination"
+                android:ems="10"
+                android:id="@+id/editText" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="84dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+                android:layout_width="257dp"
+                android:layout_height="49dp"
+                android:inputType="number"
+                android:hint="Number of people"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.486"/>
+        <EditText
+                android:layout_width="260dp"
+                android:layout_height="55dp"
+                android:inputType="textPersonName"
+                android:text="Pickup Point"
+                android:ems="10"
+                android:id="@+id/editText3" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="36dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText"/>
+        <TextView
+                android:text="Trip Details"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/editText"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+
+        <ProgressBar
+                android:id="@+id/indeterminateBar"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:indeterminate="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <EditText
+                android:hint="Date"
+                android:focusable="false"
+                android:layout_width="255dp"
+                android:layout_height="45dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText4" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/button" app:layout_constraintVertical_bias="0.368"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
